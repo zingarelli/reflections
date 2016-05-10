@@ -1,0 +1,15 @@
+What happens when you initialize a repository? Why do you need to do it?
+Reply: When I initialize a repository, a hidden directory is created, .git/
+which contains metadata regarding this repository. This is needed so Git
+can track the files contained in that repository, commits and changes 
+that've been made in that repository. It contains all kinds of information
+needed for the version control of a project.
+
+How is the staging area different from the working directory and the 
+repository? What value do you think it offers?
+Reply: The staging area works as an intermediary step between a directory
+and a repository. Files in the staging are ready to commit, which in turn
+add them to the repository. This intermediary offers flexibilization of
+which files the user wants to add to the repository and which files should
+be only in the working directory.
+
