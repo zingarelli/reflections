@@ -13,3 +13,38 @@ add them to the repository. This intermediary offers flexibilization of
 which files the user wants to add to the repository and which files should
 be only in the working directory.
 
+How can you use the staging area to make sure you have one commit per 
+logical change?
+Reply: You add to the staging area only the files that you have changed and
+that are related to the logical change you made. To verify if you added the 
+correct files, you can run "git diff", which will compare files in the 
+working directory and the stage area. Similarly, to make sure you're 
+committing the correct files, you can run "git diff --stages", which will 
+compare files in the stage area and your repository.
+
+What are some situations when branches would be helpful in keeping your 
+history organized? How would branches help?
+Reply: Branches help when you want to make some changes in your current
+project that won't actually be part of the project, like some experiment 
+or a feature you want only to test. Branching a project allows you to create 
+labels to each branch so you know why that branch was created for. Besides, 
+changes made in a branch, stay in that branch. Eventually, you can merge 
+branches, integrating their codes into a single branch.
+
+How do the diagrams help you visualize the branch structure?
+Reply: It's easier to see the project branching out and which commits are 
+reachable in each branch. This could help when I want to identify which 
+branch has a specific change and then checkout to it.
+
+What is the result of merging two branches together? Why do we represent 
+it in the diagram the way we do?
+Reply: Changes made in files existing in both branches are merged, files 
+created in each branch are added and files removed are removed. All of this 
+is then in a single branch. We represent it in the diagram as a branch 
+having two "fathers" so we know that those two branches were merged.
+
+What are the pros and cons of Git’s automatic merging vs. always doing 
+merges manually?
+Reply: Git is able to show me where the conflicts occurr when trying to 
+automatically merge, being easy to spot the differences. I don't see the 
+cons of not using it.
