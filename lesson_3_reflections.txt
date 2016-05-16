@@ -8,3 +8,16 @@ Why might you want to always pull changes manually rather than having Git automa
 stay up-to-date with your remote repository?
 Reply: Maybe if you're working with other people, it might be better if you pull changes 
 so you may know what went on between the time you last pulled from the remote repository.
+
+Describe the differences between forks, clones, and branches. When would you use one 
+instead of another?
+Reply: Forks and clones work the same way, but fork is exclusive to GitHub. It allows you
+to copy a repository from GitHub directly to your GitHub account. You can afterwards 
+clone this forked repository to your local repository. The advantage here is that you 
+keep a link to the original repository that you've forked, hence the creator is referenced, 
+which is a good practice. Branches may be thought as a clone of a commit with changes that
+do not affect the original commit, unless you want it (via git merge). This allows you to, 
+for example, test new features that you don't want to be shared yet to the working project.
+
+What is the benefit of having a copy of the last known state of the remote stored locally?
+Reply: So you can know if you're ahead or behind the last commit on remote.
