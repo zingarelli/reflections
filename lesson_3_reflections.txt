@@ -21,3 +21,25 @@ for example, test new features that you don't want to be shared yet to the worki
 
 What is the benefit of having a copy of the last known state of the remote stored locally?
 Reply: So you can know if you're ahead or behind the last commit on remote.
+
+How would you collaborate without using Git or GitHub? What would be easier, and what 
+would be harder?
+Reply: Like I do without version control: divide the project into smaller tasks and 
+distributing them with the team, so each one takes care of a particular task. Later on,
+we would get together and unify our tasks into a single code. This is easier to small
+projects, but gets complicated when the project starts growing bigger. In this case, git
+would be a possible choice to keep things organized.
+
+When would you want to make changes in a separate branch rather than directly in master? 
+What benefits does each approach have?
+Reply: Think of master as your showcase to the public. So you want it to be as perfect 
+as possible, without errors. This way, when making changes, using a separate branch to 
+test it first should be advisable, so you can avoid possible errors going to public. 
+Now if you're going to change small things that won't break your project, then changing
+it directly in master won't be such a big deal.
+
+
+
+
+
+
